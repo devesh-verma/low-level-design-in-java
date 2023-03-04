@@ -8,11 +8,11 @@ import main.java.services.IParkingStratergy;
 
 public class TwoWheelerParkingManager extends ParkingManager {
 
-  TwoWheelerParkingManager(List<ParkingSpot> parkingSpots) {
+  public TwoWheelerParkingManager(List<ParkingSpot> parkingSpots) {
     super(parkingSpots, new Default());
   }
 
-  TwoWheelerParkingManager(List<ParkingSpot> parkingSpots, IParkingStratergy parkingStratergy) {
+  public TwoWheelerParkingManager(List<ParkingSpot> parkingSpots, IParkingStratergy parkingStratergy) {
     super(parkingSpots, parkingStratergy);
   }
 }

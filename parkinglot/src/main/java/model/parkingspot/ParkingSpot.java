@@ -17,5 +17,4 @@ public abstract class ParkingSpot {
     this.vehicle = null;
     this.isEmpty = true;
   }
-
 }

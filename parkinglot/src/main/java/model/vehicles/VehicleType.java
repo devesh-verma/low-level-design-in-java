@@ -1,6 +1,6 @@
 package main.java.model.vehicles;
 
-enum VehicleType {
+public enum VehicleType {
   TWOWHEELER,
   FOURWHEELER
 }

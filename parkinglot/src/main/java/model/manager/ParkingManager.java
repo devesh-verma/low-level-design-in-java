@@ -14,7 +14,7 @@ public abstract class ParkingManager {
     this.parkingStratergy = parkingStratergy;
   }
 
-  ParkingSpot findParkingSpot() {
+  public ParkingSpot findParkingSpot() {
     return this.parkingStratergy.find();
   }
 
