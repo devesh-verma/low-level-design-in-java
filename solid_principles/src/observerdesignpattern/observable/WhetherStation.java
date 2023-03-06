@@ -6,24 +6,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WhetherStation implements WhetherStationObservable{
-    List<DisplayObserver> observers;
+    List<DisplayObserver> observerList;
     public WhetherStation(){
-        this.observers = new ArrayList<>();
+        this.observerList = new ArrayList<>();
     }
-    int temperature = 23;
+    public int temperature = 23;
     @Override
-    public void add(DisplayObserver obj) {
-        observers.add(obj);
+    public void add(DisplayObserver observer) {
+        observerList.add(observer);
     }
     @Override
-    public void remove(DisplayObserver obj) {
-        observers.remove(obj);
+    public void remove(DisplayObserver observer) {
+        observerList.remove(observer);
     }
 
     @Override
     public void nottify() {
-        for (DisplayObserver obj: observers) {
-            obj.update();
+        for (DisplayObserver observer: observerList) {
+            observer.update();
         }
     }
 
